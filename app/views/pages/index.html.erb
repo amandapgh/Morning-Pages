@@ -1,2 +1,9 @@
 <h1>Morning Pages</h1>
 <h2>A place to reflect + write</h2>
+
+<% @pages.each do |p| %>
+<h1><%= p.title %></h1><br />
+<p><%= p.content %></p><br />
+<p>Mood: <%= p.mood %></p><br />
+<br>
+<% end %>

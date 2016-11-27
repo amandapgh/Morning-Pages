@@ -1,0 +1,11 @@
+<h1>Create a New Page</h1>
+
+<%= form_for @page do |p| %>
+  <%= p.label :title %><br />
+  <%= p.text_field :title %><br />
+  <%= p.label :content %><br />
+  <%= p.text_area :content %><br />
+  <%= p.label :mood %><br />
+  <%= p.text_field :mood %><br />
+  <%= p.submit %><br />
+<% end %>
