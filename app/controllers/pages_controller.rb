@@ -22,4 +22,8 @@ class PagesController < ApplicationController
     params.require(:page).permit(:title, :content, :mood)
   end
 
+  def show
+    @page = Page.find()
+  end
+
 end
