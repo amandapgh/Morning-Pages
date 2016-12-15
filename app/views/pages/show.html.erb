@@ -1,7 +1,9 @@
-<h3><%= @page.title %></h3>
-<p><%= @page.content %></p>
-<p>Mood: <%= @page.mood %></p>
+<div class="post">
+  <h3><%= @page.title %></h3>
+  <p><%= @page.content %></p>
+  <p>Mood: <%= @page.mood %></p>
 
-<%= button_to 'Destroy', page_path(@page),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %>
+  <%= button_to 'Delete This Post', page_path(@page),
+                method: :delete,
+                data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
+</div>

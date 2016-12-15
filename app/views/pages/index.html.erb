@@ -1,6 +1,11 @@
+<div id="postcontainer">
 <% @pages.each do |p| %>
-<h3><%= p.title %></h3>
-<p><%= p.content %></p>
-<p>Mood: <%= p.mood %></p>
-<br>
+
+  <div class="post">
+    <h3><%= link_to p.title, page_path(p) %></h3>
+    <p><%= p.content %></p>
+    <p>Mood: <%= p.mood %></p>
+  </div>
+
 <% end %>
+</div>

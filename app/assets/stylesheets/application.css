@@ -15,3 +15,66 @@
  */
 
  @import "bootstrap";
+
+header {
+  text-align:center;
+}
+
+body {
+  background-image: url("http://vignette2.wikia.nocookie.net/thedreamdimension/images/8/87/Tumblr_static_9n732n166tc0sc84ows4os40.png.jpg/revision/latest/scale-to-width-down/1280?cb=20150826225341");
+  background-size: 105%;
+  background-repeat: no-repeat;
+}
+
+#wrap {
+  width:100%;
+  margin:auto;
+  text-align:center;
+}
+
+#postcontainer {
+  height:500px;
+  overflow: scroll;
+  position: absolute;
+}
+
+.post {
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  padding:10px;
+  border-radius:10px;
+  background-color:white;
+  opacity:.8;
+}
+a {
+  color:#F49ADA;
+}
+a:hover {
+  text-decoration: none;
+  color:#C397EE;
+}
+.btn {
+  opacity: .8;
+}
+h1, h2 {
+  color:white;
+  font-size: 50px;
+}
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+}
+p, a {
+  font-family: 'Poiret One', sans-serif;
+}
+input {
+  width:300px;
+}
+textarea {
+  width:300px;
+  height:150px;
+}
+btn, btn-default {
+  font-family: sans-serif;
+}
