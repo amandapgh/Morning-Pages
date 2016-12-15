@@ -17,13 +17,18 @@ class PagesController < ApplicationController
       end
   end
 
+  def show
+    @page = Page.find(params[:id])
+  end
+
+  def destroy
+    @page = Page.find(params[:id])
+    @page.destroy
+  end
+
   private
   def page_params
     params.require(:page).permit(:title, :content, :mood)
-  end
-
-  def show
-    @page = Page.find()
   end
 
 end

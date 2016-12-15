@@ -1,0 +1,8 @@
+<h1>Morning Pages</h1>
+<h2>A place to reflect + write</h2>
+
+<h3><%= @page.title %></h3>
+<p><%= @page.content %></p>
+<p>Mood: <%= @page.mood %></p>
+
+<%= link_to 'Delete Post', pages_path, :method => :destroy %>
